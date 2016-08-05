@@ -14,8 +14,8 @@ class Navbar extends Component {
     return (
       <div>
         <div id="header">
-          <Link to="/" id="name">MSG Blog</Link>
-          <Link to="/new">new post</Link>
+          <Link to="/" id="name">The Goldstein Blog</Link>
+          <Link to="/new" id="createlink"><i className="fa fa-plus" aria-hidden="true"></i></Link>
         </div>
         {this.props.children}
       </div>

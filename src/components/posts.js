@@ -17,21 +17,27 @@ class Posts extends Component {
 
   render() {
     console.log('the');
-    console.log(this.props.state);
+    console.log(this.props.posts);
 
     return (
-      <ul>
-        {this.props.state.posts.all.map((post) =>
-          <li><Link to={`${post.id}`} id="postlink" key={post.id}>{post.title}</Link></li>
-        )}
-      </ul>
+      <div id="postscontainer">
+        <div id="posts">
+          {this.props.posts.map((post) =>
+            <Link to={`${post.id}`} id="postlink" key={post.id}>
+              <div id="post">
+                {post.title}
+              </div>
+            </Link>
+          )}
+        </div>
+      </div>
     );
   }
 }
 
 const mapStateToProps = (state) => (
   {
-    state,
+    posts: state.posts.all,
   }
 );
 
