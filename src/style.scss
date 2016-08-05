@@ -59,6 +59,28 @@ body {
   border-radius: 5px;
 }
 
+#pinnedpost {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#pin {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  margin-top: 2px;
+}
+
 #newcontainer {
   display: flex;
   flex-direction: row;
