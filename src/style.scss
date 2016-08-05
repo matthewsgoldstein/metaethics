@@ -2,6 +2,8 @@ body {
   font-family: "Roboto", sans-serif;
   color: rgb(10%, 10%, 10%);
   background-image: url("http://www.mrwallpaper.com/wallpapers/gradient-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   font-size: 16px;
 }
 
@@ -163,4 +165,8 @@ footer {
   flex-direction: row;
   justify-content: center;
   margin-top: 30px;
+}
+
+#contentnew {
+  font-size: 18px;
 }
