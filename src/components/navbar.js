@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 
 // example class based component (smart component)
 class Navbar extends Component {
@@ -12,11 +13,11 @@ class Navbar extends Component {
   render() {
     return (
       <div>
-        <ul>
-          <a href="/">your site name</a>
-          <br />
-          <a href="posts/new">new post</a>
-        </ul>
+        <div id="header">
+          <Link to="/" id="name">MSG Blog</Link>
+          <Link to="/new">new post</Link>
+        </div>
+        {this.props.children}
       </div>
     );
   }
