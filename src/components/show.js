@@ -49,7 +49,7 @@ class Show extends Component {
               <h1> {this.props.current.title} </h1>
               <div id="showtitleicons">
                 <i id="editicon" className="fa fa-pencil fa-2x" aria-hidden="true" onClick={this.onEdit}></i>&nbsp;
-                <i id="trash" onClick={() => { this.props.deletePost(this.props.params.id); }} className="fa fa-trash fa-2x" aria-hidden="true"></i>
+                //<i id="trash" onClick={() => { this.props.deletePost(this.props.params.id); }} className="fa fa-trash fa-2x" aria-hidden="true"></i>
               </div>
             </div>
             <h5> tags: {this.props.current.tags} </h5>
@@ -68,7 +68,7 @@ class Show extends Component {
             <div id="editcontent">Edit content: <Textarea id="textarea" defaultValue={this.props.current.content} onChange={(event) => this.setState({ content: event.target.value })} /></div>
             <div id="icons">
               <i id="checkicon" className="fa fa-check fa-2x" aria-hidden="true" onClick={this.onSubmit}></i>
-              <i id="trashedit" onClick={() => { this.props.deletePost(this.props.params.id); }} className="fa fa-trash fa-2x" aria-hidden="true"></i>
+            //  <i id="trashedit" onClick={() => { this.props.deletePost(this.props.params.id); }} className="fa fa-trash fa-2x" aria-hidden="true"></i>
             </div>
           </div>
         </div>

@@ -14,7 +14,7 @@ class Navbar extends Component {
     return (
       <div>
         <div id="header">
-          <Link to="/" id="name">The Goldstein Blog</Link>
+          <Link to="/" id="name">Metaethics</Link>
           <div id="menu">
             <Link to="/" id="name"><i className="fa fa-home" aria-hidden="true"></i></Link>&nbsp;&nbsp;&nbsp;
             <Link to="/new" id="createlink"><i className="fa fa-plus" aria-hidden="true"></i></Link>
